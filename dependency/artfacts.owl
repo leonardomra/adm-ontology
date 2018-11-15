@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#"
+     xml:base="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts"
+     xmlns:artfacts="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasCollectionMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasCollectionMember">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#MainCollectionNode"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#EntityCollectionNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasEntityMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasEntityMember">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#EntityCollectionNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasMainEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasMainEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasEntityMember"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#EntityCollectionNode"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://schema.org/Event"/>
+                    <rdf:Description rdf:about="http://schema.org/Person"/>
+                    <rdf:Description rdf:about="http://schema.org/Quantity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Abstraction"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Action"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Artifact"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Institution"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Location"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Quality"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasPropertyEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasPropertyEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts#hasEntityMember"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#EntityCollectionNode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Event -->
+
+    <owl:Class rdf:about="http://schema.org/Event"/>
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://schema.org/Quantity -->
+
+    <owl:Class rdf:about="http://schema.org/Quantity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Abstraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Abstraction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Artifact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Artifact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Audio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Audio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Boolean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Boolean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#CollectionNode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#CollectionNode"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#EntityCollectionNode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#EntityCollectionNode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#CollectionNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#ExtraValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#ExtraValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#GPS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#GPS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Hook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Hook">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Image">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Institution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Institution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#MainCollectionNode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#MainCollectionNode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#CollectionNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#NodeClass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#NodeClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Quality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Quality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Quantity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Quantity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#RelationshipValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#RelationshipValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#URI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#URI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#WebAddress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Unit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Unit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Video -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Video">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#Medium"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#WebAddress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-61#WebAddress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mak3rs/ontologies/2018/4/untitled-ontology-73#PropertyNode"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

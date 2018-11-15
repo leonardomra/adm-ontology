@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1542288684073" name="http://www.semanticweb.org/mak3rs/ontologies/2018/4/adm" uri="adm-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1542288684073" name="http://www.semanticweb.org/mak3rs/ontologies/2018/4/artfacts" uri="dependency/artfacts.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1542288684073" name="http://www.w3.org/2008/05/skos" uri="dependency/skos.owl"/>
+    </group>
+</catalog>
